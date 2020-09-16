@@ -1,0 +1,30 @@
+.pokedex {
+  background-image: url('/images/pokedex.jpg');
+  height: 900px;
+  width: 500px;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative
+}
+
+.pokemon-image {
+  position: absolute;
+  top: 340px;
+  left: 180px;
+}
+
+.pokemon-image img {
+  width: 200px;
+  height: 200px;
+}
+
+.pokemon-description {
+  position: absolute;
+  top: 600px;
+  left: 20px;
+  font-size: 16px;
+  color: white;
+
+}
+

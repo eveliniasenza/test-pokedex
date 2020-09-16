@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.content-wrap {
+  padding: 80px 0;
+}
+
+.pagination {
+  overflow-x: auto;
+}
