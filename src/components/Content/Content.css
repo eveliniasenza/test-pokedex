@@ -1,6 +1,6 @@
 .pokedex {
   background-image: url('/images/pokedex.jpg');
-  height: 900px;
+  height: 890px;
   width: 500px;
   max-width: 100%;
   background-size: cover;
@@ -9,10 +9,33 @@
 }
 
 .pokemon-image {
+  border: 20px solid lightgrey;
+  background-color: black;
+  padding: 10px;
   position: absolute;
   top: 340px;
   left: 180px;
 }
+
+@media screen and (max-width: 1000px) {
+  .pokemon-image {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .pokemon-image {
+    left: 180px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .pokemon-image {
+    left: 50px;
+  }
+}
+
 
 .pokemon-image img {
   width: 200px;
@@ -21,9 +44,10 @@
 
 .pokemon-description {
   position: absolute;
-  top: 600px;
-  left: 20px;
+  top: 650px;
+  left: 50px;
   font-size: 16px;
+  font-family:Impact;
   color: white;
 
 }

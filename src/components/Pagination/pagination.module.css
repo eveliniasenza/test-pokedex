@@ -1,3 +1,7 @@
 .pagination {
-  margin-top: 80px;
+  margin-top: 20px;
+}
+
+.pagination li a {
+  color: black !important;
 }

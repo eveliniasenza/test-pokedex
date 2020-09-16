@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: dimgrey !important;
 }
 
 code {
@@ -22,4 +23,29 @@ code {
 
 .pagination {
   overflow-x: auto;
+}
+
+.list-group-item {
+  padding: 3.6rem 3rem !important;
+  font-family: Impact, fantasy;
+  text-transform: capitalize;
+  background-color: #bf1f1f !important;
+  border: 1px solid black !important;
+  color: black !important;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+  display: block;
+  background: green;
+  border: 3px solid black;
+  position: absolute;
+  right: -40px;
+  top: 12px;
 }

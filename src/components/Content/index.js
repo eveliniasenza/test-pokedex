@@ -21,7 +21,7 @@ const Content = () => {
     <Wrapper>
       <Container>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} sm={12} md={6}>
             <div className="pokedex">
               {
                 currentPokemon && (
@@ -30,27 +30,34 @@ const Content = () => {
                       <img src={currentPokemon.sprites.other.dream_world.front_default} alt=""/>
                     </div>
                     <div className="pokemon-description">
-                      Abilities:
+                      <h4>
+                        Abilities/ Habilidades:
+                      </h4>
                       <ul>
                         { currentPokemon.abilities.map(ability => (
                           <li>{ ability.ability.name }</li>
                         )) }
                       </ul>
-                      <p>Weight: { currentPokemon.weight }</p>
+                      <h4>
+                        <p>Weight/ Peso:</p>
+                      </h4>
+                        { currentPokemon.weight }
                     </div>
                   </>
                 )
               }
             </div>
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} sm={12} md={6}>
             <ul className="list-group">
               { pokemons.map(pokemon => (
                 <li
                   onClick={() => onClickPokemon(pokemon.name)}
-                  className="list-group-item cursor-pointer"
-                >
-                  { pokemon.name }
+                  className="list-group-item cursor-pointer">
+                  <span className="h1 position-relative">
+                    { pokemon.name }
+                    <div className="circle"></div>
+                  </span>
                 </li>
               )) }
             </ul>
